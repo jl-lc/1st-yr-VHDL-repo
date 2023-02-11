@@ -1,0 +1,25 @@
+
+State Machine - |LogicalStep_Lab4_top|State_Machine_Grabber:INST14|current_state
+Name current_state.GCLOSEDHOLD current_state.GOPEN current_state.GOPENHOLD current_state.GCLOSED 
+current_state.GCLOSED 0 0 0 0 
+current_state.GOPENHOLD 0 0 1 1 
+current_state.GOPEN 0 1 0 1 
+current_state.GCLOSEDHOLD 1 0 0 1 
+
+State Machine - |LogicalStep_Lab4_top|State_Machine_Extender:INST12|current_state
+Name current_state.MRIGHT current_state.MLEFT current_state.BC 
+current_state.BC 0 0 0 
+current_state.MLEFT 0 1 1 
+current_state.MRIGHT 1 0 1 
+
+State Machine - |LogicalStep_Lab4_top|XYMotion:INST6|XYMotion_Component_2:INST2|current_state
+Name current_state.MOTION_CASE current_state.TRANSITION current_state.BC 
+current_state.BC 0 0 0 
+current_state.TRANSITION 0 1 1 
+current_state.MOTION_CASE 1 0 1 
+
+State Machine - |LogicalStep_Lab4_top|XYMotion:INST6|XYMotion_Component_2:INST1|current_state
+Name current_state.MOTION_CASE current_state.TRANSITION current_state.BC 
+current_state.BC 0 0 0 
+current_state.TRANSITION 0 1 1 
+current_state.MOTION_CASE 1 0 1 
