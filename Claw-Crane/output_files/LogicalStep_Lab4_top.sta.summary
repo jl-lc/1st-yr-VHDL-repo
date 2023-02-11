@@ -1,0 +1,61 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'State_Machine_Extender:INST12|current_state.BC'
+Slack : -7.155
+TNS   : -19.673
+
+Type  : Setup 'Bidir_shift_reg:INST13|sreg[0]'
+Slack : -6.845
+TNS   : -21.296
+
+Type  : Setup 'Clock_Source:Clock_Selector|\clk_divider:counter[23]'
+Slack : -4.525
+TNS   : -90.763
+
+Type  : Setup 'Clkin_50'
+Slack : -2.358
+TNS   : -37.157
+
+Type  : Hold 'Bidir_shift_reg:INST13|sreg[0]'
+Slack : 0.027
+TNS   : 0.000
+
+Type  : Hold 'Clock_Source:Clock_Selector|\clk_divider:counter[23]'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Hold 'Clkin_50'
+Slack : 0.378
+TNS   : 0.000
+
+Type  : Hold 'State_Machine_Extender:INST12|current_state.BC'
+Slack : 0.936
+TNS   : 0.000
+
+Type  : Recovery 'Clock_Source:Clock_Selector|\clk_divider:counter[23]'
+Slack : -2.524
+TNS   : -64.426
+
+Type  : Removal 'Clock_Source:Clock_Selector|\clk_divider:counter[23]'
+Slack : 0.936
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'Clkin_50'
+Slack : -3.000
+TNS   : -38.688
+
+Type  : Minimum Pulse Width 'Bidir_shift_reg:INST13|sreg[0]'
+Slack : -1.734
+TNS   : -22.117
+
+Type  : Minimum Pulse Width 'Clock_Source:Clock_Selector|\clk_divider:counter[23]'
+Slack : -1.487
+TNS   : -62.454
+
+Type  : Minimum Pulse Width 'State_Machine_Extender:INST12|current_state.BC'
+Slack : 0.408
+TNS   : 0.000
+
+------------------------------------------------------------
