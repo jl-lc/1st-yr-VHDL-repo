@@ -1,0 +1,66 @@
+--LIBRARY ieee;
+--USE ieee.std_logic_1164.ALL;
+--USE ieee.numeric_std.ALL;
+--
+--ENTITY XYMotion IS
+--   PORT
+--	(
+--	CLK, RESET											: in	std_logic;
+--	X_LT, X_EQ, X_GT, Y_LT, Y_EQ, Y_GT			: in	std_logic;
+--	motion, ext_out									: in	std_logic;
+--	X_clk_en, Y_clk_en, X_up_down, Y_up_down	: out std_logic;
+--	Capture_XY, error, extender_en				: out std_logic
+--	);
+--END ENTITY XYMotion;
+--
+--ARCHITECTURE Circuit OF XYMotion IS
+--
+--component Component_Motion is port 
+--(
+--	CLK, RESET, ALTB, AEQB, AGTB, motion, ext_out									: in std_logic;      --
+--	CLK_EN, up_down, ext_en, error																	: out std_logic	--
+--);
+--end component;
+--
+--signal X_ext_en				: std_logic;
+--signal Y_ext_en				: std_logic;
+--signal X_error				: std_logic;
+--signal Y_error				: std_logic;
+--
+--BEGIN
+--
+--
+--process (CLK, RESET) is
+--begin
+--	IF (RESET = '1') THEN
+--		Capture_XY <= '0';
+--		error <= '0';
+--		extender_en <= '0';
+--	END IF;
+--		
+--	IF ((X_ext_en = '1') OR (Y_ext_en = '1')) THEN
+--		extender_en <= '1';
+--	ELSE
+--		extender_en <= '0';
+--	END IF;
+--
+--	
+--	IF (motion = '1') THEN
+--		Capture_XY <= '1';
+--	ELSE
+--		Capture_XY <= '0';
+--	END IF;
+--		
+--		
+--	IF ((X_error = '1') OR (Y_error = '1')) THEN
+--		error <= CLK;
+--	ELSE
+--		error <= '0';
+--	END IF;
+--		
+--end process;
+--
+--INST1: Component_Motion port map(CLK, RESET, X_LT, X_EQ, X_GT, motion, ext_out, X_clk_en, X_up_down, X_ext_en, X_error);		--X motion
+--INST2: Component_Motion port map(CLK, RESET, Y_LT, Y_EQ, Y_GT, motion, ext_out, Y_clk_en, Y_up_down, Y_ext_en, Y_error);		--Y motion
+--	
+--END ARCHITECTURE Circuit;
