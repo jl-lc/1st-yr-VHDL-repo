@@ -1,5 +1,5 @@
 # VHDL Projects Repo
-Repository containing completed Altera VHDL projects of interest in first year course
+Repository containing completed VHDL projects on Altera FPGA of interest in first year course
 
 ---
 ## Project 2 - VHDL ALU
